@@ -1,0 +1,5 @@
+formatter.name: pretty
+suites:
+    search_suite:
+        namespace: Rollerworks\Component\ExceptionParser
+        psr4_prefix: Rollerworks\Component\ExceptionParser
