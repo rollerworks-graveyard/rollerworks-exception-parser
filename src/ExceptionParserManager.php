@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the Rollerworks ExceptionParser package.
+ *
+ * (c) Sebastiaan Stok <s.stok@rollerscapes.net>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 /**
  * This file is part of the Rollerworks ExceptionParser package.
  *
@@ -36,7 +45,7 @@ class ExceptionParserManager
     public function __construct($paramTemplate = null)
     {
         if (is_callable($paramTemplate) || null === $paramTemplate) {
-           // noop
+            // noop
         } elseif (!is_string($paramTemplate) || false === strpos($paramTemplate, '{var}')) {
             throw new \InvalidArgumentException(
                 'Missing "{var}" placeholder in param-template or invalid callback.'
